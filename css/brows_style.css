@@ -1,0 +1,58 @@
+.bro_main {
+    background-color: rgb(112, 87, 169);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 5fr 0.5fr;
+    grid-template-rows: 1fr 1.6fr 5fr 0.5fr 1fr;
+    grid-template-areas: "head head head"
+                         "search search search"
+                         "menu cont ."
+                         ". . ."
+                         "foot foot foot";
+}
+
+.content {
+    grid-area: cont;
+    background-color: rgb(117, 54, 165);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    overflow: scroll;
+}
+
+.a_prof {
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.a_prof:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.a_prof img {
+    border-radius: 110px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.a_prof span {
+    margin: auto;
+}
+
+.fslide {
+    width: 230px;
+}
+
+.sort_sel select {
+    background-color: white;
+}
+
+.my_slides {
+    background-color: white;
+}

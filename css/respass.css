@@ -1,0 +1,65 @@
+.repass_form {
+    display: grid;
+    grid-area: cont;
+    grid-template-columns: [name] 0.6fr [inputs] 3fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-gap: 8px;
+    background: rgb(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 10px;
+    width: 600px;
+    height: 170px;
+  }
+
+  .repass_form > label  {
+    margin: 10px;
+    text-align: center;
+    grid-column: name;
+    padding-top: 20px;
+  }
+
+  .confirm {
+    background-color: rgb(40, 80, 140);
+  }
+
+  .repass_form > input{
+    grid-column: inputs;
+    padding: 12px 20px;
+    margin: 8px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    height: 40px;
+  }
+
+  .repass_form > button{
+    color: white;
+    background-color: rgb(127, 47, 171);
+    border-radius: 10px;
+    grid-column: inputs;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+  }
+
+  .repass_form > button:hover {
+    background-color: rgb(60, 70, 160);
+  }
+
+  .repass_title {
+    color: white;
+    grid-column: inputs;
+    margin-left: 25%;
+  }
+
+  .repass_form > a {
+      grid-area: inputs;
+      color: black;
+      margin: auto;
+      padding-bottom: 15px;
+  }
+
+  .error {
+    color: rgb(190, 0, 0);
+    grid-column: inputs;
+}

@@ -1,0 +1,126 @@
+.main {
+    background-color: rgb(112, 87, 169);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 0.5fr 4fr 0.5fr 1fr;
+    grid-template-areas: "head head head"
+                         ". . ."
+                         ". cont ."
+                         ". . ."
+                         "foot foot foot";
+}
+
+.head {
+    grid-area: head;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: grid; 
+    grid-template-columns: 1fr 600px;
+    grid-template-areas: "logo opts";
+}
+
+.butts {
+    grid-area: opts;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". notif mess"
+                         "prof sign reg";
+}
+
+.logo {
+    grid-area: logo;
+    margin: auto;
+    margin-left: 0;
+}
+
+.reg {
+    grid-area: reg;
+    text-align: center;
+}
+
+.reg:hover {
+    color: rgb(117, 54, 165);
+}
+
+.sign {
+    grid-area: sign;
+    text-align: center;
+}
+
+.sign:hover {
+    color: rgb(117, 54, 165);
+}
+
+.prof {
+    grid-area: prof;
+    text-align: center;
+}
+
+.prof:hover {
+    color: rgb(117, 54, 165);
+}
+
+.bro {
+    grid-area: sign;
+    text-align: center;
+}
+
+.bro:hover {
+    color: rgb(117, 54, 165);
+}
+
+.msgs {
+    grid-area: mess;
+    text-align: center;
+}
+
+.msgs:hover {
+    color: rgb(117, 54, 165);
+}
+
+.notif {
+    grid-area: notif;
+    text-align: center;
+}
+
+.notif:hover {
+    color: rgb(117, 54, 165);
+}
+
+.out {
+    grid-area: reg;
+    text-align: center;
+}
+
+.out:hover {
+    color: rgb(117, 54, 165);
+}
+
+.cont {
+    grid-area: cont;
+    vertical-align: middle;
+    padding-top: 20%;
+}
+
+.cont > h1 {
+    font-family: cursive;
+    text-align: center;
+    margin-top: auto;
+}
+
+.couple {
+   display: block;
+   margin: auto;
+}
+
+.foot {
+    grid-area: foot;
+    padding-left: 7%;
+    padding-right: 7%;
+    vertical-align: middle;
+}
+
+.foot > pre {
+    text-align: right;
+}

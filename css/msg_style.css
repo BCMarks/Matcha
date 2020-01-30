@@ -1,0 +1,42 @@
+.msgmain {
+  background-color: rgb(112, 87, 169);
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 0.5fr 4fr 0.5fr 1fr;
+  grid-template-areas: "head head head"
+                       ". . ."
+                       ". cont ."
+                       ". msg ."
+                       "foot foot foot";
+}
+
+.chats {
+    display: grid;
+    grid-area: cont;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    background: rgb(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 10px;
+    width: 600px;
+    height: 650px;
+    overflow: scroll;
+  }
+
+  .left {
+    text-align: left;
+    background-color: lightgreen;
+  }
+
+  .right {
+    text-align: right;
+    background-color: grey;
+  }
+
+  .new {
+    border: 1px solid black;
+    display: grid;
+    grid-area: msg;
+  }
+

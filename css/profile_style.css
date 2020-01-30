@@ -1,0 +1,161 @@
+.promain {
+    background-color: rgb(112, 87, 169);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr 4fr 0.5fr 1fr;
+    grid-template-areas: "head head head head head"
+                         ". . . . ."
+                         ". pics info tag ."
+                         ". . . . ."
+                         "foot foot foot foot foot";
+}
+
+.picdiv {
+    grid-area: pics;
+    border-radius: 10px;
+    height: 650px;
+    width: 350px;
+    display: grid;
+    margin: auto;
+    margin-top: 0;
+    grid-template-rows: 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "pic"
+                         "match"
+                         "like"
+                         "edit"
+                         " . ";
+}
+
+.match {
+    grid-area: match;
+    background-color: rgb(97, 149, 210);
+    margin: auto;
+    border-radius: 4px;
+    /* border: 1px solid black; */
+    padding: 7px;
+    width: 33%;
+    height: 80%;
+}
+
+.profimg {
+    background-color: gray;
+    border-radius: 10px;
+    grid-area: pic;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.edit {
+    background-color: rgb(97, 149, 210);
+    margin: auto;
+    border-radius: 4px;
+    /* border: 1px solid black; */
+    padding: 7px;
+    width: 33%;
+    height: 80%;
+}
+
+.edit:hover {
+    background-color: pink; 
+}
+
+.like {
+    background-color: rgb(97, 149, 210);
+    margin: auto;
+    border-radius: 4px;
+    /* border: 1px solid black; */
+    padding: 7px;
+    width: 33%;
+    height: 80%;
+}
+
+.user_info {
+    grid-area: info;
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    border-radius: 10px;
+    height: 650px;
+    width: 400px;
+    display: grid;
+    margin: auto;
+    margin-top: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-areas: "bio"
+                         "info"
+                         "status";
+}
+
+.bio {
+    grid-area: bio;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+.info {
+    grid-area: info;
+    color: white;
+    background-color: rgb(115, 115, 115, 0.5);
+    padding: 10px;
+}
+
+.status {
+    grid-area: status;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: green;
+    width: 30%;
+    height: 60%;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.tag_div {
+    grid-area: tag;
+    margin-left: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 650px;
+    width: 200px;
+    display: grid;
+    grid-template-rows: 5fr 1fr 1fr 1fr;
+}
+
+.tags {
+    color: white;
+    padding: 10px;
+}
+
+.block {
+    background-color: rgb(97, 149, 210);
+    margin: auto;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.rep {
+    background-color: rgb(97, 149, 210);
+    margin: auto;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.vis {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: scroll;
+}

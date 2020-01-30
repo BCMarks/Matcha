@@ -1,0 +1,52 @@
+.nmain {
+  background-color: rgb(112, 87, 169);
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 0.5fr 4fr 0.5fr 1fr;
+  grid-template-areas: "head head head"
+                       ". . ."
+                       ". cont ."
+                       ". clear ."
+                       "foot foot foot";
+}
+
+.notifs {
+    display: grid;
+    grid-area: cont;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    background: rgb(255, 255, 255, 0.5);
+    margin: auto;
+    border-radius: 10px;
+    width: 600px;
+    height: 650px;
+    overflow: scroll;
+  }
+
+  .unread {
+    background-color: lightgreen;
+  }
+
+  .read {
+    background-color: grey;
+  }
+
+  .clear {
+    color: white;
+    background-color: rgb(127, 47, 171);
+    border-radius: 10px;
+    grid-area: clear;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    padding-top: 10px;
+  }
+
+  .clear span {
+    padding-left: 25%;
+  }
+
+  .clear:hover {
+    background-color: rgb(157, 57, 201);
+  }
